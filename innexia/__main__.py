@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` *INNEXIA* `your group super bot`
+`Heya` 🤗 `I am` *ᴠɪʀᴛᴜᴀʟ ᴄʜᴀᴛ ɪᴅ ʙᴏᴛ* `your group super bot`
 `Saya sangat cepat dan lebih efisien. Saya menyediakan fitur luar biasa yang akan dicari pemilik untuk filter, sistem peringatan, sistem pencatatan anjir!`
 """
 
@@ -117,7 +117,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("innexia.modules." + module_name)
+    imported_module = importlib.import_module("ᴠɪʀᴛᴜᴀʟ ᴄʜᴀᴛ ɪᴅ ʙᴏᴛ.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -363,12 +363,12 @@ def innexiabot_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="innexiabot_back")
+                    InlineKeyboardButton(text="Back", callback_data="VCID_bot_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "innexiabot_back":
+    elif query.data == "VCID_bot_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
