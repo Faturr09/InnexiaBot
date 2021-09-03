@@ -70,7 +70,7 @@ if ENV:
     API_HASH = os.environ.get("API_HASH", "f448445cc8d75a13d5ff0c591d0bfc9e")
     BOT_ID = int(os.environ.get("BOT_ID", "1973200024"))
     DB_URI = os.environ.get("DATABASE_URL")
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://veez:Faturpatue09@cluster0.8z1j2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", "mongodb+srv://Inexxia222:Faturpatue09@cluster0.6mdky.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     DONATION_LINK = os.environ.get("DONATION_LINK")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", "36a71a0f-889d-424d-b63b-21b0c9cf3095")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", "borusu")
